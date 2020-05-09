@@ -106,16 +106,16 @@ function buildAndShowHomeHTML (categories) {
       console.log(categories);
       var chosenCategoryShortName = chooseRandomCategory (categories);//may noy use ;
       //according to my notes, this is how do you call the function and pass the categories.
-var insertProperty = function (string, propName, propValue) {
-  var propToReplace = "{{" + propName + "}}";
-  string = string
-    .replace(new RegExp(propToReplace, "g"), propValue);
-  return string;
-};
+// var insertProperty = function (string, propName, propValue) {
+//   var propToReplace = "{{" + propName + "}}";
+//   string = string
+//     .replace(new RegExp(propToReplace, "g"), propValue);
+//   return string;
+// };
 
-function buildMenuItemsViewHtml(categoryMenuItems,
-                                menuItemsTitleHtml,
-                                menuItemHtml) {
+// function buildMenuItemsViewHtml(categoryMenuItems,
+//                                 menuItemsTitleHtml,
+//                                 menuItemHtml) {
 
   menuItemsTitleHtml =
     insertProperty(menuItemsTitleHtml,
