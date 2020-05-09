@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 //
 // TODO: STEP 1: Substitute [...] below with the *value* of the function buildAndShowHomeHTML,
 // so it can be called when server responds with the categories data.
-var categoriesL = [{"id":81,"short_name":"L","name":"Lunch","special_instructions":"Sunday-Friday 11:15am-3:00pm. Served with your choice of rice (Vegetable Fried RIce, Steamed Rice, Brown Rice), AND EITHER soup (Hot \u0026 Sour, Wonton, Vegetable, Egg Drop, Chicken Corn Soup) OR veggie egg roll. $1.00 extra to have both soup and egg roll.","url":"https://davids-restaurant.herokuapp.com/categories/81.json"},{"id":82,"short_name":"A","name":"Soup","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/82.json"},{"id":83,"short_name":"B","name":"Appetizers","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/83.json"},{"id":84,"short_name":"SP","name":"Chef's Recommendations","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/84.json"},{"id":85,"short_name":"C","name":"Chicken","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/85.json"},{"id":86,"short_name":"F","name":"Beef","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/86.json"},{"id":87,"short_name":"V","name":"Veal","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/87.json"},{"id":88,"short_name":"DK","name":"Duck","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/88.json"},{"id":89,"short_name":"VG","name":"Vegetables","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/89.json"},{"id":90,"short_name":"CU","name":"Curry","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/90.json"},{"id":91,"short_name":"NL","name":"Noodles (Lo Mein)","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/91.json"},{"id":92,"short_name":"NF","name":"Mei Fan (Very Fine Noodles)","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/92.json"},{"id":93,"short_name":"PF","name":"Pan Fried Noodles","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/93.json"},{"id":94,"short_name":"FR","name":"Fried Rice","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/94.json"},{"id":95,"short_name":"CM","name":"Chow Mein","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/95.json"},{"id":96,"short_name":"FY","name":"Egg Foo Young","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/96.json"},{"id":97,"short_name":"SO","name":"Side Orders","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/97.json"},{"id":98,"short_name":"DS","name":"Desserts","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/98.json"},{"id":99,"short_name":"D","name":"Dinner Combo","special_instructions":"Served with your choice of rice (Vegetable Fried RIce, Steamed Rice, Brown Rice), AND EITHER soup (Hot \u0026 Sour, Wonton, Vegetable, Egg Drop, Chicken Corn Soup) OR veggie egg roll.","url":"https://davids-restaurant.herokuapp.com/categories/99.json"},{"id":100,"short_name":"SR","name":"Sushi Menu","special_instructions":"Contains raw ingredients. Consuming raw or undercooked meat, poultry, or seafood may increase your risk of food borne illness.","url":"https://davids-restaurant.herokuapp.com/categories/100.json"}];
+// var categoriesL = [{"id":81,"short_name":"L","name":"Lunch","special_instructions":"Sunday-Friday 11:15am-3:00pm. Served with your choice of rice (Vegetable Fried RIce, Steamed Rice, Brown Rice), AND EITHER soup (Hot \u0026 Sour, Wonton, Vegetable, Egg Drop, Chicken Corn Soup) OR veggie egg roll. $1.00 extra to have both soup and egg roll.","url":"https://davids-restaurant.herokuapp.com/categories/81.json"},{"id":82,"short_name":"A","name":"Soup","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/82.json"},{"id":83,"short_name":"B","name":"Appetizers","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/83.json"},{"id":84,"short_name":"SP","name":"Chef's Recommendations","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/84.json"},{"id":85,"short_name":"C","name":"Chicken","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/85.json"},{"id":86,"short_name":"F","name":"Beef","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/86.json"},{"id":87,"short_name":"V","name":"Veal","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/87.json"},{"id":88,"short_name":"DK","name":"Duck","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/88.json"},{"id":89,"short_name":"VG","name":"Vegetables","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/89.json"},{"id":90,"short_name":"CU","name":"Curry","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/90.json"},{"id":91,"short_name":"NL","name":"Noodles (Lo Mein)","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/91.json"},{"id":92,"short_name":"NF","name":"Mei Fan (Very Fine Noodles)","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/92.json"},{"id":93,"short_name":"PF","name":"Pan Fried Noodles","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/93.json"},{"id":94,"short_name":"FR","name":"Fried Rice","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/94.json"},{"id":95,"short_name":"CM","name":"Chow Mein","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/95.json"},{"id":96,"short_name":"FY","name":"Egg Foo Young","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/96.json"},{"id":97,"short_name":"SO","name":"Side Orders","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/97.json"},{"id":98,"short_name":"DS","name":"Desserts","special_instructions":"","url":"https://davids-restaurant.herokuapp.com/categories/98.json"},{"id":99,"short_name":"D","name":"Dinner Combo","special_instructions":"Served with your choice of rice (Vegetable Fried RIce, Steamed Rice, Brown Rice), AND EITHER soup (Hot \u0026 Sour, Wonton, Vegetable, Egg Drop, Chicken Corn Soup) OR veggie egg roll.","url":"https://davids-restaurant.herokuapp.com/categories/99.json"},{"id":100,"short_name":"SR","name":"Sushi Menu","special_instructions":"Contains raw ingredients. Consuming raw or undercooked meat, poultry, or seafood may increase your risk of food borne illness.","url":"https://davids-restaurant.herokuapp.com/categories/100.json"}];
 
 // *** start ***
 // On first load, show home view
@@ -105,7 +105,21 @@ function buildAndShowHomeHTML (categories) {
       // var chosenCategoryShortName = ....
       var chosenCategoryShortName = chooseRandomCategory (categories);//may noy use ;
       //according to my notes, this is how do you call the function and pass the categories.
+// var insertProperty = function (string, propName, propValue) {
+//   var propToReplace = "{{" + propName + "}}";
+//   string = string
+//     .replace(new RegExp(propToReplace, "g"), propValue);
+//   return string;
+// };
 
+// function buildMenuItemsViewHtml(categoryMenuItems,
+//                                 menuItemsTitleHtml,
+//                                 menuItemHtml) {
+
+//   menuItemsTitleHtml =
+//     insertProperty(menuItemsTitleHtml,
+//                    "name",
+//                    categoryMenuItems.category.name);
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
       // Look through this code for an example of how to do use the insertProperty function.
@@ -117,13 +131,13 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      // var homeHtmlToInsertIntoMainPage = ....
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, "chosenCategoryShortName", homeHtml)
+      // str propertyanme, propertyalue
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName)
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-      insertHtml("#main-content", homeHtmlToInsertIntoMainPage)//html from step3
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage)//html from step3//may not b main-content
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
