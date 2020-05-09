@@ -104,7 +104,7 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
       // console.log(categories);
-      var chosenCategoryShortName = chooseRandomCategory (categories);//may noy use ;
+      var chosenCategoryShortName = chooseRandomCategory (categories).short_name;//may noy use ;
       //according to my notes, this is how do you call the function and pass the categories.
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -120,7 +120,7 @@ function buildAndShowHomeHTML (categories) {
       //
       // str propertyanme, propertyalue
       // console.log(chosenCategoryShortName);
-      var homeHtmlToInsertIntoMainPage = insertProperty(menuItemHtml, "randomCategoryShortName", chosenCategoryShortName);
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
