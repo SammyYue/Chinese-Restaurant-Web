@@ -77,13 +77,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 //
 // TODO: STEP 1: Substitute [...] below with the *value* of the function buildAndShowHomeHTML,
 // so it can be called when server responds with the categories data.
-
+var categoriesL = [];
 // *** start ***
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  buildAndShowHomeHTML,// ***** <---- TODO: STEP 1: Substitute [...] ******
+  buildAndShowHomeHTML(),// ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
