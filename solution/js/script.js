@@ -84,8 +84,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  buildAndShowHomeHTML,
-  buildAndShowMenuItemsHTML,// ***** <---- TODO: STEP 1: Substitute [...] ******
+  buildAndShowHomeHTML,// ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
@@ -235,7 +234,7 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
             buildMenuItemsViewHtml(categoryMenuItems,
                                    menuItemsTitleHtml,
                                    menuItemHtml);
-          insertHtml("#main-content", menuItemsViewHtml);
+          insertHtml("#specials-tile", menuItemsViewHtml);
         },
         false);
     },
