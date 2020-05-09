@@ -120,7 +120,7 @@ function buildAndShowHomeHTML (categories) {
       //
       // str propertyanme, propertyalue
       // console.log(chosenCategoryShortName);
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
+      var homeHtmlToInsertIntoMainPage = insertProperty(menuItemHtml, "randomCategoryShortName", chosenCategoryShortName);
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
@@ -234,7 +234,7 @@ function buildAndShowMenuItemsHTML (categoryMenuItems) {
             buildMenuItemsViewHtml(categoryMenuItems,
                                    menuItemsTitleHtml,
                                    menuItemHtml);
-          insertHtml("#specials-tile", menuItemsViewHtml);
+          insertHtml("#main-content", menuItemsViewHtml);
         },
         false);
     },
