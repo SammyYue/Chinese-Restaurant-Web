@@ -84,7 +84,7 @@ var categoriesL = [{"id":81,"short_name":"L","name":"Lunch","special_instruction
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  buildAndShowHomeHTML(categoriesL),// ***** <---- TODO: STEP 1: Substitute [...] ******
+  buildAndShowHomeHTML,// ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
