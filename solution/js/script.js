@@ -103,7 +103,7 @@ function buildAndShowHomeHTML (categories) {
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
-      console.log(categories);
+      // console.log(categories);
       var chosenCategoryShortName = chooseRandomCategory (categories);//may noy use ;
       //according to my notes, this is how do you call the function and pass the categories.
 // var insertProperty = function (string, propName, propValue) {
@@ -133,7 +133,7 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // str propertyanme, propertyalue
-      console.log(chosenCategoryShortName);
+      // console.log(chosenCategoryShortName);
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
